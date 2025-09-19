@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Quiz</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="heading" id="heading">Science Quiz</h1>
+            <p id="headerText">This quiz will test your knowledge in Science</p>
+        </div>
+
+        <div class="content">
+
+            <!--* Welcome Section  -->
+            <div id="welcomeSection">
+                <div class="instructions">
+                    <h3>Instructions</h3>
+                    <p>• Answer one question at a time</p>
+                    <p>• Read the questions carefully before answering</p>
+                    <p>• You can choose a topic and number of questions</p>
+                    <p>• If you accidentally clicked the wrong aswer, you can't go back</p>
+                    <p>• Score 70% or higher to pass</p>
+                </div>
+
+                <button id="okayBtn">Okay</button>
+            </div>
+
+            <!--* Choose Section  -->
+            <div id="chooseSection">
+                <div class="choose-card">
+                    <div class="chooseTopic">
+                        <h3>Choose a topic</h3>
+                        <div id="topics">
+                            <div class="topic-option">
+                                <input type="radio" name="topic" value="physics">
+                                Physics
+                            </div>
+
+                            <div class="topic-option">
+                                <input type="radio" name="topic" value="biology">
+                                Biology
+                            </div>
+
+                            <div class="topic-option">
+                                <input type="radio" name="topic" value="chemistry">
+                                Chemistry
+                            </div>
+
+                            <div class="topic-option">
+                                <input type="radio" name="topic" value="astronomy">
+                                Astronomy
+                            </div>
+
+                            <div class="topic-option">
+                                <input type="radio" name="topic" value="geology">
+                                Geology
+                            </div>
+
+                            <div class="topic-option">
+                                <input type="radio" name="topic" value="computerScience">
+                                Computer Science
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chooseNumQuestions">
+                        <h3>Choose a number of questions</h3>
+                        <div id="numbers">
+                            <div class="number-option">
+                                <input type="radio" name="numQuestions" value="10"> 10
+                            </div>
+
+                            <div class="number-option">
+                                <input type="radio" name="numQuestions" value="15"> 15
+                            </div>
+
+                            <div class="number-option">
+                                <input type="radio" name="numQuestions" value="20"> 20
+                            </div>
+
+                            <div class="number-option">
+                                <input type="radio" name="numQuestions" value="30"> 30
+                            </div>
+
+                            <div class="number-option">
+                                <input type="radio" name="numQuestions" value="40"> 40
+                            </div>
+
+                            <div class="number-option">
+                                <input type="radio" name="numQuestions" value="50"> 50
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="startBtn">Start Quiz</button>
+            </div>
+
+
+            <!--* Quiz Section -->
+            <div id="quizSection">
+                <div class="progress-bar">
+                    <div id="progress"></div>
+                </div>
+
+                <div class="question-card">
+                    <div id="questionNumber">Questions 1 of 10</div>
+                    <div id="questionText"></div>
+
+                    <div id="answersContainer">
+
+                    </div>
+
+                    <div id="feedback"> </div>
+                </div>
+
+            </div>
+
+            <!--* Result Section  -->
+            <div id="resultSection">
+                <div id="scoreCircle">0%</div>
+                <div id="resultMessage"></div>
+                <div id="resultDetails"></div>
+
+                <button id="restartBtn">Restart Quiz</button>
+            </div>
+        </div>
+
+    </div>
+
+    
+
+    <script src="questions/biology.js"></script>
+    <script src="questions/chemistry.js"></script>
+    <script src="questions/physics.js"></script>
+    <script src="questions/geology.js"></script>
+    <script src="questions/astronomy.js"></script>
+    <script src="questions/com-sci.js"></script>
+
+    <script src="src/feedbacks.js"></script>
+    <script src="src/script.js"></script>
+</body>
+</html>
