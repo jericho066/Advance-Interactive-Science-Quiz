@@ -46,6 +46,9 @@ const updateProgress = () => {
 const showResults = () => {
     quizSection.classList.remove('active');
     
+    heading.textContent = "Results";
+    headerText.textContent = "Your final score and statistics";
+
     const percentage = Math.round((score / quizQuestions.length) * 100);
     const passed = percentage >= 70;
     
@@ -221,6 +224,45 @@ const startQuiz = () => {
 }
 
 
+const restartQuiz = () => {
+    chooseSection.style.display = "block";
+    resultSection.classList.remove("show");
+    quizSection.classList.remove("active");
+
+    //* reset quiz state
+    currentQuestionIndex = 0;
+    score = 0;
+    currentStreak = 0;
+    highestStreak = 0;
+    selectedTopic = "";
+    selectedNumQuestions = 10;
+
+    //* reset UI elements
+    heading.textContent = "Sience Quiz";
+    headerText.textContent = "This quiz will test your knowledge in Science";
+    scoreCircle.textContent = '0%';
+    resultMessage.textContent = '';
+    resultDetails.innerHTML = '';
+    feedback.classList.remove('show', 'correct', 'incorrect');
+    answersContainer.innerHTML = '';
+    progress.style.width = '0%';
+
+    //* clear selected visual states and radio checks
+    topicOptions.forEach(opt => opt.classList.remove('selected'));
+    numberOptions.forEach(opt => opt.classList.remove('selected'));
+
+    const checkedTopic = document.querySelector('input[name="topic"]:checked');
+    if (checkedTopic) {
+        checkedTopic.checked = false;
+    }
+
+    const checkedNum = document.querySelector('input[name="numQuestions"]:checked');
+    if (checkedNum) {
+        checkedNum.checked = false;
+    }
+}
+
+
 document.addEventListener("DOMContentLoaded", () => {
 
     topicOptions.forEach(option => {
@@ -260,41 +302,5 @@ okayBtn.addEventListener("click", () => {
 
 startBtn.addEventListener("click", startQuiz);
 
-restartBtn.addEventListener("click", () => {
-    chooseSection.style.display = "block";
-    resultSection.classList.remove("show");
-    quizSection.classList.remove("active");
-
-    //* reset quiz state
-    currentQuestionIndex = 0;
-    score = 0;
-    currentStreak = 0;
-    highestStreak = 0;
-    selectedTopic = "";
-    selectedNumQuestions = 10;
-
-    //* reset UI elements
-    heading.textContent = "Sience Quiz";
-    headerText.textContent = "This quiz will test your knowledge in Science";
-    scoreCircle.textContent = '0%';
-    resultMessage.textContent = '';
-    resultDetails.innerHTML = '';
-    feedback.classList.remove('show', 'correct', 'incorrect');
-    answersContainer.innerHTML = '';
-    progress.style.width = '0%';
-
-    //* clear selected visual states and radio checks
-    topicOptions.forEach(opt => opt.classList.remove('selected'));
-    numberOptions.forEach(opt => opt.classList.remove('selected'));
-
-    const checkedTopic = document.querySelector('input[name="topic"]:checked');
-    if (checkedTopic) {
-        checkedTopic.checked = false;
-    }
-
-    const checkedNum = document.querySelector('input[name="numQuestions"]:checked');
-    if (checkedNum) {
-        checkedNum.checked = false;
-    }
-})
+restartBtn.addEventListener("click", restartQuiz)
 
