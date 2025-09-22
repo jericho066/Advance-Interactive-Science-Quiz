@@ -46,7 +46,7 @@ const updateProgress = () => {
 const showResults = () => {
     quizSection.classList.remove('active');
     
-    heading.textContent = "Results";
+    heading.textContent = "Quiz Result";
     headerText.textContent = "Your final score and statistics";
 
     const percentage = Math.round((score / quizQuestions.length) * 100);
