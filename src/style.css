@@ -302,6 +302,7 @@ body {
 
 .answer-option.correct-reveal::after {
     content: " ✔";
+    position: absolute;
     font-weight: bold;
     color: #22543d;
     margin-left: 5px;
@@ -309,6 +310,7 @@ body {
 
 .answer-option.correct::after {
     content: " ✔";
+    position: absolute;
     font-weight: bold;
     color: #22543d;
     margin-left: 5px;
@@ -316,6 +318,7 @@ body {
 
 .answer-option.incorrect::after {
     content: " ✖";
+    position: absolute;
     font-weight: bold;
     color: #742a2a;
     margin-left: 5px;
@@ -517,7 +520,6 @@ body {
     body {
         padding: 10px;
         padding-top: 20px;
-        align-items: flex-start;
     }
 
     .container {
@@ -551,12 +553,12 @@ body {
     }
     
     .answer-option {
-        text-align: left;
+        /* text-align: left; */
         padding: 15px;
     }
     
     #questionText {
-        text-align: left;
+        /* text-align: left; */
         margin-bottom: 20px;
     }
     

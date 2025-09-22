@@ -43,12 +43,25 @@ const updateProgress = () => {
     progress.style.width = progressFill + "%";
 }
 
+
 const showResults = () => {
     quizSection.classList.remove('active');
+
+    const selectedTopicRadio = document.querySelector('input[name="topic"]:checked');
+    const selectedTopic = selectedTopicRadio.value;
+
+    const capitalizeTopic = (topic) => {
+        return topic
+         // insert space before capital letters (for "computerScience")
+        .replace(/([A-Z])/g, ' $1')
+        // capitalize first letter of each word
+        .replace(/\b\w/g, char => char.toUpperCase());
+    }
     
     heading.textContent = "Quiz Result";
-    headerText.textContent = "Your final score and statistics";
+    headerText.textContent = `Your final score and statistics in ${capitalizeTopic(selectedTopic)}`;
 
+    
     const percentage = Math.round((score / quizQuestions.length) * 100);
     const passed = percentage >= 70;
     
@@ -262,6 +275,8 @@ const restartQuiz = () => {
     }
 }
 
+
+//! ==== Event Listerners ==== 
 
 document.addEventListener("DOMContentLoaded", () => {
 
