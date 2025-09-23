@@ -27,16 +27,6 @@ A comprehensive, responsive web-based quiz application covering multiple science
 
 [Live Demo](https://jericho066.github.io/advance-interactive-science-quiz/)
 
-## 📸 Screenshots
-
-### Quiz Selection
-![Quiz Selection](screenshots/selection.png)
-
-### Question Interface  
-![Question Interface](screenshots/question.png)
-
-### Results & Review
-![Results](screenshots/results.png)
 
 ## 🛠️ Technologies Used
 
@@ -89,7 +79,7 @@ science-quiz/
 git clone https://github.com/jericho066/advance-interactive-science-quiz.git
 
 # Navigate to project directory
-cd science-quiz
+cd advance-interactive-science-quiz
 
 # Open in browser
 open index.html
