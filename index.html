@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Science Quiz</title>
+    <title>Advance Interactive Science Quiz</title>
     <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
@@ -33,7 +33,9 @@
             <div id="chooseSection">
                 <div class="choose-card">
                     <div class="chooseTopic">
+                        
                         <h3>Choose a topic</h3>
+
                         <div id="topics">
                             <div class="topic-option">
                                 <input type="radio" name="topic" value="physics">
@@ -64,11 +66,14 @@
                                 <input type="radio" name="topic" value="computerScience">
                                 Computer Science
                             </div>
+
                         </div>
                     </div>
 
                     <div class="chooseNumQuestions">
+
                         <h3>Choose a number of questions</h3>
+
                         <div id="numbers">
                             <div class="number-option">
                                 <input type="radio" name="numQuestions" value="10"> 10
@@ -93,7 +98,9 @@
                             <div class="number-option">
                                 <input type="radio" name="numQuestions" value="50"> 50
                             </div>
+
                         </div>
+
                     </div>
                 </div>
 
@@ -103,6 +110,7 @@
 
             <!--* Quiz Section -->
             <div id="quizSection">
+                
                 <div class="progress-bar">
                     <div id="progress"></div>
                 </div>
@@ -122,11 +130,23 @@
 
             <!--* Result Section  -->
             <div id="resultSection">
+                
                 <div id="scoreCircle">0%</div>
                 <div id="resultMessage"></div>
                 <div id="resultDetails"></div>
 
+                <button id="viewAnswersBtn">View Answers</button>
                 <button id="restartBtn">Restart Quiz</button>
+            </div>
+
+            <!--* Answer Review Section -->
+            <div id="answerReviewSection">
+                <div class="review-summary">
+                    <h3 id="reviewSummaryTitle">Quiz Review</h3>
+                    <p id="reviewSummaryStats"></p>
+                </div>
+                <div id="reviewContainer"></div>
+                <button id="backToResultsBtn">Back to Results</button>
             </div>
         </div>
 
