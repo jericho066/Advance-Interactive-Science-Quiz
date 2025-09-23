@@ -25,7 +25,7 @@ A comprehensive, responsive web-based quiz application covering multiple science
 
 ## 🚀 Demo
 
-[Live Demo](https://your-username.github.io/science-quiz) *(Add your GitHub Pages link)*
+[Live Demo](https://jericho066.github.io/advance-interactive-science-quiz/)
 
 ## 📸 Screenshots
 
