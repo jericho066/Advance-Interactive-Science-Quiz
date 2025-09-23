@@ -178,4 +178,4 @@ Contributions are welcome! Here's how you can help:
 
 ## 📄 License
 
-This project is open source and available under the [MIT License](https://github.com/jericho066/advance-interactive-science-quiz/new/main).
+This project is open source and available under the [MIT License](https://github.com/jericho066/advance-interactive-science-quiz/blob/main/LICENSE).
