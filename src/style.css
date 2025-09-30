@@ -604,26 +604,185 @@ body {
 
 
 /** Responsiveness  */
-
 @media (min-width: 1200px) {
     .container {
-        max-width: 750px;
+        max-width: 620px;
+        max-height: 95vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header {
+        padding: 25px 30px;
+        flex-shrink: 0;
+    }
+
+    .header h1 {
+        font-size: 1.8rem;
+        margin-bottom: 5px;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+
+    .content {
+        padding: 25px 30px;
+        flex: 1;
+        overflow-y: auto;
+        min-height: 0;
+    }
+
+    .choose-card {
+        padding: 20px;
+        margin-bottom: 20px;
+        gap: 20px;
+    }
+
+    .chooseTopic, .chooseNumQuestions {
+        margin-bottom: 15px;
+    }
+
+    .chooseTopic h3, .chooseNumQuestions h3 {
+        font-size: 1.1rem;
+        margin-bottom: 15px;
     }
 
     #topics {
         grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
     }
 
-    #number {
+    .topic-option {
+        padding: 12px 15px;
+        min-height: 50px;
+        font-size: 0.95rem;
+    }
+
+    #numbers {
         grid-template-columns: repeat(6, 1fr);
         max-width: 500px;
+        gap: 12px;
     }
 
-    .content  {
-        padding: clamp(30px, 4vw, 40px) clamp(25px, 4vw, 35px);
-    };
-    .choose-card {
-        padding: clamp(25px, 4vw, 35px);
+    .number-option {
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+
+    .instructions {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .instructions h3 {
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+    }
+
+    .instructions p {
+        font-size: 0.95rem;
+        margin-bottom: 8px;
+    }
+
+    .question-card {
+        padding: 25px;
+        margin-bottom: 20px;
+    }
+
+    #questionNumber {
+        font-size: 0.85rem;
+        margin-bottom: 12px;
+    }
+
+    #questionText {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    #answersContainer {
+        gap: 10px;
+    }
+
+    .answer-option {
+        padding: 12px 18px;
+        font-size: 1rem;
+    }
+
+    #feedback {
+        margin-top: 15px;
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    .progress-bar {
+        margin-bottom: 20px;
+    }
+
+    #startBtn, #okayBtn, #restartBtn, #backToResultsBtn {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+
+    #viewAnswersBtn {
+        padding: 12px 25px;
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    #scoreCircle {
+        width: 130px;
+        height: 130px;
+        margin: 0 auto 20px;
+        font-size: 1.8rem;
+    }
+
+    #resultMessage {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+
+    #resultDetails {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    .review-question-card {
+        padding: 20px;
+        margin-bottom: 15px;
+    }
+
+    .review-question-number {
+        font-size: 0.85rem;
+    }
+
+    .review-result-badge {
+        padding: 4px 10px;
+        font-size: 0.8rem;
+    }
+
+    .review-question-text {
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+    }
+
+    .review-answer {
+        padding: 10px 15px;
+        font-size: 0.95rem;
+    }
+
+    .review-summary {
+        padding: 18px;
+        margin-bottom: 18px;
+    }
+
+    .review-summary h3 {
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+    }
+
+    .review-summary p {
+        font-size: 0.95rem;
     }
 }
 
