@@ -142,12 +142,6 @@ Modify `src/style.css` to customize:
 2. Add topic option in `index.html`
 3. Update `selectTopic()` function in `script.js`
 
-## 🐛 Known Issues
-
-- Ensure all question files are properly linked in `index.html`
-- Some advanced physics questions may be challenging for general audiences
-- Mobile optimization is ongoing for very small screens
-
 ## 🤝 Contributing
 
 Contributions are welcome! Here's how you can help:
@@ -166,15 +160,15 @@ Contributions are welcome! Here's how you can help:
 
 ## 📝 Future Enhancements
 
-- [ ] Question difficulty levels
-- [ ] Timer mode for each question
-- [ ] Detailed explanations for answers
-- [ ] Performance analytics over time
-- [ ] Question bookmarking system
-- [ ] Multi-language support
-- [ ] Dark mode toggle
-- [ ] Sound effects and music
-- [ ] Achievement system
+- Question difficulty levels
+- Timer mode for each question
+- Detailed explanations for answers
+- Performance analytics over time
+- Question bookmarking system
+- Multi-language support
+- Dark mode toggle
+- Sound effects and music
+- Achievement system
 
 ## 📄 License
 
