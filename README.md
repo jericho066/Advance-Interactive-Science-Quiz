@@ -1,8 +1,8 @@
-# 🧪 Interactive Science Quiz
+# Interactive Science Quiz
 
 A comprehensive, responsive web-based quiz application covering multiple science subjects. Test your knowledge across Physics, Biology, Chemistry, Astronomy, Geology, and Computer Science with an intuitive interface and detailed answer review system.
 
-## ✨ Features
+## Features
 
 ### Core Functionality
 - **6 Science Topics**: Physics, Biology, Chemistry, Astronomy, Geology, and Computer Science
@@ -23,12 +23,12 @@ A comprehensive, responsive web-based quiz application covering multiple science
 - **Comprehensive Results**: Final score with detailed statistics
 - **Restart Functionality**: Easy quiz reset with topic re-selection
 
-## 🚀 Demo
+## Demo
 
 [Live Demo](https://jericho066.github.io/advance-interactive-science-quiz/)
 
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **HTML5**: Semantic structure and accessibility
 - **CSS3**: 
@@ -42,7 +42,7 @@ A comprehensive, responsive web-based quiz application covering multiple science
   - Event-driven architecture
   - Local state management
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 science-quiz/
@@ -61,7 +61,7 @@ science-quiz/
 └── README.md
 ```
 
-## 🎯 How to Use
+## How to Use
 
 1. **Start**: Click "Okay" to proceed from the welcome screen
 2. **Select Topic**: Choose from 6 available science subjects
@@ -102,7 +102,7 @@ npx http-server
 # Then open http://localhost:8000
 ```
 
-## 🧪 Question Database
+## Question Database
 
 The quiz includes 350+ carefully curated questions across six subjects:
 
@@ -113,7 +113,7 @@ The quiz includes 350+ carefully curated questions across six subjects:
 - **Geology**: Rock types, Earth structure, plate tectonics, mineralogy
 - **Computer Science**: Programming concepts, algorithms, data structures, networking
 
-## 🎨 Customization
+## Customization
 
 ### Adding New Questions
 Add questions to the respective subject files in the `questions/` directory:
@@ -142,7 +142,7 @@ Modify `src/style.css` to customize:
 2. Add topic option in `index.html`
 3. Update `selectTopic()` function in `script.js`
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Here's how you can help:
 
@@ -158,7 +158,7 @@ Contributions are welcome! Here's how you can help:
 4. Push to branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📝 Future Enhancements
+## Future Enhancements
 
 - Question difficulty levels
 - Timer mode for each question
@@ -170,6 +170,6 @@ Contributions are welcome! Here's how you can help:
 - Sound effects and music
 - Achievement system
 
-## 📄 License
+## License
 
 This project is open source and available under the [MIT License](https://github.com/jericho066/advance-interactive-science-quiz/blob/main/LICENSE).
